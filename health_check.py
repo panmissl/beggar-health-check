@@ -4,7 +4,7 @@ import urllib.request
 def health_check():
     print(f"start to check beggar")
   
-    url = "https://beggar.onrender.com/health"
+    url = "https://beggar.onrender.com/keepalive"
     while True:
         try:
             with urllib.request.urlopen(url, timeout=10) as resp:
